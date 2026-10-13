@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Haris | Resume</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f7;
+            color: #252b36;
+            margin: 0;
+            line-height: 1.6;
+            transition: 0.3s;
+        }
+
+        .resume {
+            max-width: 850px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 35px;
+            border-top: 5px solid #a52a3a;
+        }
+
+        header {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            color: #172b4d;
+            margin-bottom: 5px;
+            font-size: 32px;
+        }
+
+        .contact {
+            color: #555;
+            font-size: 14px;
+        }
+
+        a {
+            color: #a52a3a;
+            text-decoration: none;
+        }
+
+        h2 {
+            color: #172b4d;
+            font-size: 19px;
+            border-bottom: 2px solid #a52a3a;
+            padding-bottom: 5px;
+            margin-top: 25px;
+        }
+
+        h3 {
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+
+        p {
+            margin-top: 5px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .item {
+            margin-bottom: 18px;
+        }
+
+        .skills {
+            background-color: #f7f8fa;
+            padding: 15px;
+            border-left: 3px solid #a52a3a;
+        }
+
+        footer {
+            text-align: center;
+            color: #777;
+            border-top: 1px solid #ddd;
+            margin-top: 30px;
+            padding-top: 15px;
+            font-size: 13px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #a52a3a;
+            color: white;
+            border: none;
+            padding: 10px 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        #myphoto {
+            width: 120px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        body.dark-theme {
+            background-color: #121820;
+            color: #e5e7eb;
+        }
+
+        body.dark-theme .resume {
+            background-color: #1e293b;
+            color: #e5e7eb;
+        }
+
+        body.dark-theme h1,
+        body.dark-theme h2 {
+            color: #f1f5f9;
+        }
+
+        body.dark-theme .contact,
+        body.dark-theme footer {
+            color: #cbd5e1;
+        }
+
+        body.dark-theme .skills {
+            background-color: #273449;
+            color: #e5e7eb;
+        }
+        body.dark-theme header,
+        body.dark-theme footer {
+            border-color: #475569;
+        }
+
+        @media (max-width: 600px) {
+            .resume {
+                margin: 10px;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 27px;
+            }
+        }
+
+        @media print {
+            .buttons,
+            #myphoto,
+            .download-area {
+                display: none !important;
+            }
+
+            .resume {
+                margin: 0;
+                border-top: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resume">
+
+        <div class="buttons">
+            <button id="showPhoto">Show Photo</button>
+            <button id="themeButton">Light / Dark</button>
+        </div>
+
+        <img id="myphoto" src="image.jpeg" alt="My Photo" style="display: none;">
+
+        <header>
+            <h1>ABDUL HARIS M</h1>
+            <p class="contact">
+                Chennai, Tamil Nadu |
+                +91 9710880922 |
+                <a href="mailto:abdulmharis1@gmail.com">Email</a> |
+                <a href="https://www.linkedin.com/in/abdul-haris-4a37062a5">LinkedIn</a>
+            </p>
+        </header>
+
+        <section>
+            <h2>Career Objective</h2>
+            <p>
+                Motivated Computer Science undergraduate with exposure
+                to full-stack web development through two internships
+                and personal projects. Interested in applying technical
+                knowledge, learning new technologies and growing as
+                a software developer.
+            </p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Education</h2>
+            <div class="item">
+                <h3>B. E Computer Science And Engineering</h3>
+                <p>S. A. Engineering College</p>
+                <p>CGPA: 7.90 | Expected Graduation: 2027</p>
+            </div>
+
+            <div class="item">
+                <h3>Class XII</h3>
+                <p>Balalok MHSS, State Board | 79.17% | 2023</p>
+            </div>
+
+            <div class="item">
+                <h3>Class X</h3>
+                <p>Balalok MHSS, State Board | Passed | 2021</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <p><strong>Programming:</strong> Java, JavaScript, HTML, CSS, React.js, Python</p>
+                <p><strong>Databases:</strong> MongoDB, SQL</p>
+                <p><strong>Core CS:</strong> OOP, DBMS, Software Engineering</p>
+                <p><strong>Tools:</strong> VS Code, Git, Figma, Antigravity</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Internship Experience</h2>
+
+            <div class="item">
+                <h3>Front-End Developer Intern</h3>
+                <p><strong>Femtosoft Technologies | 1 Month</strong></p>
+                <p>
+                    Developed responsive web pages using HTML, CSS,
+                    JavaScript and React. Worked on UI consistency
+                    and collaborated with the development team.
+                </p>
+            </div>
+
+            <div class="item">
+                <h3>Full Stack Developer Intern</h3>
+                <p><strong>Aprotech | 1 Month</strong></p>
+                <p>
+                    Built responsive interfaces using HTML, CSS,
+                    JavaScript, React and MongoDB. Assisted with
+                    testing and debugging.
+                </p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Projects</h2>
+
+            <div class="item">
+                <h3>MERN Blog Website</h3>
+                <p>
+                    A full-stack CRUD application built using
+                    MongoDB, Express.js, React.js and Node.js.
+                </p>
+            </div>
+
+            <div class="item">
+                <h3>Responsive E-Commerce Website</h3>
+                <p>
+                    A responsive website developed using
+                    HTML, CSS and JavaScript.
+                </p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Certifications</h2>
+            <ul>
+                <li>Front-End Web Development - Infosys Springboard</li>
+                <li>UI/UX Design - GUVI</li>
+                <li>Rapid Application Developer - Mendix</li>
+                <li>Introduction to Cybersecurity - Cisco</li>
+                <li>Internship Completion Certificates - Femtosoft Technologies and Aprotech</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Strengths &amp; Languages</h2>
+            <p><strong>Strengths:</strong> Quick Learner, Problem Solving, Teamwork, Adaptability, Time Management</p>
+            <p><strong>Languages:</strong> English, Tamil</p>
+        </section>
+
+        <footer>
+            ABDUL HARIS M | RESUME
+        </footer>
+
+        <div class="download-area" style="text-align: center; margin-top: 20px;">
+            <button id="downloadButton">Download Resume</button>
+            <p>Download clicks: <span id="count">0</span></p>
+        </div>
+
+    </div>
+
+    <script>
+        const photoButton = document.getElementById("showPhoto");
+        const photo = document.getElementById("myphoto");
+        const themeButton = document.getElementById("themeButton");
+        const downloadButton = document.getElementById("downloadButton");
+        const count = document.getElementById("count");
+
+        let downloads = 0;
+
+        photoButton.addEventListener("click", function() {
+            if (photo.style.display === "none") {
+                photo.style.display = "block";
+                photoButton.textContent = "Hide Photo";
+            } else {
+                photo.style.display = "none";
+                photoButton.textContent = "Show Photo";
+            }
+        });
+
+        themeButton.addEventListener("click", function() {
+            document.body.classList.toggle("dark-theme");
+        });
+
+        downloadButton.addEventListener("click", function() {
+            downloads = downloads + 1;
+            count.textContent = downloads;
+            window.print();
+        });
+    </script>
+</body>
+</html>
